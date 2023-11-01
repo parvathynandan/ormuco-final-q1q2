@@ -20,9 +20,9 @@ function CompareVersionString() {
     const checkVersion = () => {
         const res = compareVersionStrings(version1, version2);
         if (res === -1) {
-            setResult('Version2 is greater version1')
+            setResult('Version2 is greater than version1')
         }else if(res === 1) {
-            setResult('Version1 is greater version2')
+            setResult('Version1 is greater than version2')
         }else if(res === 2) {
             setResult('Both are equal')
         }else {
@@ -40,11 +40,11 @@ function CompareVersionString() {
             <h1>INSERT VERSIONS TO COMPARE THEM</h1>
             </div>
             <div class='content'>
-                <label>Label V1</label>
+                <label> V1</label>
                 <input type='text' value={version1} onChange={(e) => setVersion1(e.target.value)} />
             </div>
             <div class='content'>
-                <label>Label V2</label>
+                <label> V2</label>
                 <input type='text' value={version2} onChange={(e) => setVersion2(e.target.value)} />
             </div>
             <div class='content'>
