@@ -20,9 +20,9 @@ function CompareVersionString() {
     const checkVersion = () => {
         const res = compareVersionStrings(version1, version2);
         if (res === -1) {
-            setResult('Version2 is greater than version1')
+            setResult('Version 2 is greater than Version 1')
         }else if(res === 1) {
-            setResult('Version1 is greater than version2')
+            setResult('Version 1 is greater than Version 2')
         }else if(res === 2) {
             setResult('Both are equal')
         }else {
